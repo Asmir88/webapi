@@ -1,0 +1,30 @@
+package com.apiApp.restapi.dao;
+
+import com.apiApp.restapi.models.FieldType;
+import java.util.List;
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+@Stateless
+public class FieldTypeDAO {
+
+    @PersistenceContext(unitName = "restapi_PU")
+    EntityManager em;
+
+    public List getAll() {
+        return em.createNamedQuery("FieldType.findAll", FieldType.class).getResultList();
+    }
+
+    public FieldType findById(Long id) {
+        return em.find(FieldType.class, id);
+    }
+
+    public void update(FieldType fieldType) {
+        em.merge(fieldType);
+    }
+
+    public void create(FieldType fieldType) {
+        em.persist(fieldType);
+    }
+}

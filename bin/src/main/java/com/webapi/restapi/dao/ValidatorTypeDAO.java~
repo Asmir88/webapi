@@ -1,0 +1,30 @@
+package com.apiApp.restapi.dao;
+
+import com.apiApp.restapi.models.ValidatorType;
+import java.util.List;
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+@Stateless
+public class ValidatorTypeDAO {
+
+    @PersistenceContext(unitName = "restapi_PU")
+    EntityManager em;
+
+    public List getAll() {
+        return em.createNamedQuery("ValidatorType.findAll", ValidatorType.class).getResultList();
+    }
+
+    public ValidatorType findById(Long id) {
+        return em.find(ValidatorType.class, id);
+    }
+
+    public void update(ValidatorType validatorType) {
+        em.merge(validatorType);
+    }
+
+    public void create(ValidatorType validatorType) {
+        em.persist(validatorType);
+    }
+}

@@ -1,0 +1,30 @@
+package com.apiApp.restapi.dao;
+
+import com.apiApp.restapi.models.FormularField;
+import java.util.List;
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+@Stateless
+public class FormularFieldDAO {
+
+    @PersistenceContext(unitName = "restapi_PU")
+    EntityManager em;
+
+    public List getAll() {
+        return em.createNamedQuery("FormularField.findAll", FormularField.class).getResultList();
+    }
+
+    public FormularField findById(Long id) {
+        return em.find(FormularField.class, id);
+    }
+
+    public void update(FormularField formularField) {
+        em.merge(formularField);
+    }
+
+    public void create(FormularField formularField) {
+        em.persist(formularField);
+    }
+}

@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [16/Dec/2019:01:52:20 +0100] "GET /restapi/api/formulars/1 HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [16/Dec/2019:01:52:25 +0100] "GET /restapi/api/formulars HTTP/1.1" 200 12
+0:0:0:0:0:0:0:1 - - [16/Dec/2019:01:52:30 +0100] "POST /restapi/api/formulars HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [16/Dec/2019:01:52:34 +0100] "GET /restapi/api/formulars HTTP/1.1" 200 123
+0:0:0:0:0:0:0:1 - - [16/Dec/2019:01:52:41 +0100] "GET /restapi/api/formulars/1 HTTP/1.1" 200 121

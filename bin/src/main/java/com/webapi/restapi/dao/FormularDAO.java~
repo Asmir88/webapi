@@ -1,0 +1,34 @@
+package com.webapi.restapi.dao;
+
+import com.webapi.restapi.models.Formular;
+import java.util.List;
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+@Stateless
+public class FormularDAO {
+
+    @PersistenceContext(unitName = "restapi_PU")
+    EntityManager em;
+
+    public List getAll() {
+        return em.createNamedQuery("Formular.findAll", Formular.class).getResultList();
+    }
+
+    public Formular findById(Long id) {
+        return em.find(Formular.class, id);
+    }
+
+    public Formular findByName(String name) {
+        return em.createNamedQuery("Formular.findByName", Formular.class).setParameter("name", name).getSingleResult();
+    }
+
+    public void update(Formular Formular) {
+        em.merge(Formular);
+    }
+
+    public void create(Formular Formular) {
+        em.persist(Formular);
+    }
+}
