@@ -18,8 +18,8 @@ import com.webapi.restapi.models.FormularField;
 @Entity
 @Table(name = "formulars")
 @NamedQueries({
-	@NamedQuery(name = "Formular.findAll", query = "SELECT f FROM Formular f left join fetch f.fields"),
-    @NamedQuery(name = "Formular.searchByName", query = "SELECT f FROM Formular f join fetch f.fields WHERE LOWER(f.name) = LOWER(:name)")
+	@NamedQuery(name = "Formular.findAll", query = "SELECT f FROM Formular f"),
+    @NamedQuery(name = "Formular.searchByName", query = "SELECT f FROM Formular f WHERE LOWER(f.name) = LOWER(:name)")
 })
 public class Formular implements Serializable {
 	

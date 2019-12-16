@@ -2,6 +2,7 @@ package com.webapi.restapi.resources;
 
 import com.webapi.restapi.dao.FormularDAO;
 import com.webapi.restapi.dao.FormularFieldDAO;
+import com.webapi.restapi.dao.RadioButtonFieldDAO;
 import com.webapi.restapi.models.Formular;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
@@ -15,8 +16,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import com.webapi.restapi.models.FormularField;
-import java.util.List;
-import java.util.ArrayList;
+import com.webapi.restapi.models.RadioButtonField;
 
 @RequestScoped
 @Path("formulars")
@@ -29,6 +29,9 @@ public class FormularResource {
 
     @Inject
     FormularFieldDAO formularFieldDAO;
+    
+    @Inject
+    RadioButtonFieldDAO radioButtonFieldDAO;
     
     @GET
     public Response getAll() {
@@ -48,7 +51,7 @@ public class FormularResource {
     public Response getFormularByName(@PathParam("name") String name) {
         Formular formular = formularDAO.findByName(name);
         if(formular == null) {
-			return Response.status(Response.Status.NOT_FOUND).entity("Entity not found").build();
+			return Response.status(Response.Status.NOT_FOUND).entity(null).build();
 		}
 
         return Response.ok(formular).build();
@@ -62,17 +65,29 @@ public class FormularResource {
 		  FormularField field  = (FormularField)formular.getFields().get(i);
 		  if(field.getId() != null)
 		  {
-		  	  formularFieldDAO.create(field);
+			  for (int j=0; j<field.getRadioButtonFields().size();j++) {
+				  RadioButtonField radioLabel  = (RadioButtonField)field.getRadioButtonFields().get(j);
+				  if(radioLabel.getId() != null)
+				  {
+					  radioButtonFieldDAO.update(radioLabel);
+				  }
+				  else
+				  {
+					  radioButtonFieldDAO.create(radioLabel);
+				  }
+				}
+		  	  formularFieldDAO.update(field);
 		  }
 		  else
 		  {
-		  	  formularFieldDAO.update(field);
+		  	  formularFieldDAO.create(field);
 		  }
 		}
         updateFormular.setName(formular.getName());
+        updateFormular.setFields(formular.getFields());
         formularDAO.update(updateFormular);
 
-        return Response.ok().build();
+        return Response.ok(updateFormular).build();
     }
 
     @POST
@@ -80,15 +95,8 @@ public class FormularResource {
     	Formular existingFormular = formularDAO.findByName(formular.getName());
         if(existingFormular == null)
         {
-        	/* List<FormularField> fields = new ArrayList<FormularField>();
-			for (int i=0; i<formular.getFields().size();i++) {
-			  FormularField field  = (FormularField)formular.getFields().get(i);
-			  FormularField newField = formularFieldDAO.create(field);
-			  fields.add(newField);
-			}
-			formular.setFields(fields); */
         	formularDAO.create(formular);
-        	return Response.ok().build();
+        	return Response.ok(formular).build();
         }
         else
 		{

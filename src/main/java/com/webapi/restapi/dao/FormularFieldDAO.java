@@ -24,8 +24,7 @@ public class FormularFieldDAO {
         em.merge(formularField);
     }
 
-    public FormularField create(FormularField formularField) {
+    public void create(FormularField formularField) {
         em.persist(formularField);
-        return formularField;
     }
 }

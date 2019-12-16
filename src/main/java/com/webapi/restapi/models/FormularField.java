@@ -1,12 +1,17 @@
 package com.webapi.restapi.models;
 
 import java.io.Serializable;
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -25,6 +30,10 @@ public class FormularField implements Serializable {
     private String type;
     private String validator;
     private Long quantity;
+    
+    @OneToMany( targetEntity=RadioButtonField.class, cascade = CascadeType.PERSIST )
+    @JoinColumn(name = "formularField_id")
+    private List<RadioButtonField> radioButtonFields;
 
     public Long getId() {
         return id;
@@ -64,6 +73,14 @@ public class FormularField implements Serializable {
 	
     public void setValidator(String validator) {
         this.validator = validator;
+    }
+    
+    public List<RadioButtonField> getRadioButtonFields() {
+    	return radioButtonFields;
+    }
+    
+    public void setFields(List<RadioButtonField> radioButtonFields) {
+    	this.radioButtonFields = radioButtonFields;
     }
 
     @Override
