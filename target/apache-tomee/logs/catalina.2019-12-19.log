@@ -1,0 +1,12 @@
+19-Dec-2019 02:36:22.715 INFO [Thread-19] sun.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["http-nio-8080"]
+19-Dec-2019 02:36:23.985 INFO [Thread-19] sun.reflect.DelegatingMethodAccessorImpl.invoke Pausing ProtocolHandler ["ajp-nio-8009"]
+19-Dec-2019 02:36:24.317 INFO [Thread-19] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping service [Catalina]
+19-Dec-2019 02:36:26.454 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.destroyApplication Undeploying app: C:\Users\HacKing\Projects\webapi\target\apache-tomee\webapps\restapi
+19-Dec-2019 02:36:29.333 INFO [localhost-startStop-2] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: restapi/HSQLDB Database
+19-Dec-2019 02:36:30.709 INFO [1] sun.reflect.DelegatingMethodAccessorImpl.invoke A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+19-Dec-2019 02:36:38.677 INFO [Thread-19] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["http-nio-8080"]
+19-Dec-2019 02:36:38.687 INFO [Thread-19] sun.reflect.DelegatingMethodAccessorImpl.invoke Stopping ProtocolHandler ["ajp-nio-8009"]
+19-Dec-2019 02:36:38.697 INFO [Thread-19] org.apache.openejb.server.SimpleServiceManager.stop Stopping server services
+19-Dec-2019 02:36:39.790 INFO [Thread-19] org.apache.openejb.assembler.classic.Assembler.doResourceDestruction Closing DataSource: restapi/HSQLDB DatabaseNonJta
+19-Dec-2019 02:36:39.968 INFO [Thread-19] sun.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["http-nio-8080"]
+19-Dec-2019 02:36:39.970 INFO [Thread-19] sun.reflect.DelegatingMethodAccessorImpl.invoke Destroying ProtocolHandler ["ajp-nio-8009"]

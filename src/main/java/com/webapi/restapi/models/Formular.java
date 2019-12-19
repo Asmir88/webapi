@@ -30,7 +30,7 @@ public class Formular implements Serializable {
     private Long id;
     private String name;
     
-    @OneToMany( targetEntity=FormularField.class, cascade = CascadeType.PERSIST )
+    @OneToMany( targetEntity=FormularField.class, cascade = CascadeType.ALL )
     @JoinColumn(name = "formular_id")
     private List<FormularField> fields;
 	

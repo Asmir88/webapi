@@ -50,10 +50,6 @@ public class FormularResource {
     @Path("/findByName/{name}")
     public Response getFormularByName(@PathParam("name") String name) {
         Formular formular = formularDAO.findByName(name);
-        if(formular == null) {
-			return Response.status(Response.Status.NOT_FOUND).entity(null).build();
-		}
-
         return Response.ok(formular).build();
     }
 

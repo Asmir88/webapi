@@ -24,8 +24,7 @@ public class RadioButtonFieldDAO {
         em.merge(radioButtonField);
     }
 
-    public RadioButtonField create(RadioButtonField radioButtonField) {
+    public void create(RadioButtonField radioButtonField) {
         em.persist(radioButtonField);
-        return radioButtonField;
     }
 }

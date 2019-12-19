@@ -1,0 +1,170 @@
+18-Dec-2019 20:40:41.563 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server version:        Apache Tomcat (TomEE)/8.5.32 (7.0.5)
+18-Dec-2019 20:40:41.563 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server built:          Jun 20 2018 19:50:35 UTC
+18-Dec-2019 20:40:41.564 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server number:         8.5.32.0
+18-Dec-2019 20:40:41.564 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke OS Name:               Windows 10
+18-Dec-2019 20:40:41.564 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke OS Version:            10.0
+18-Dec-2019 20:40:41.564 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Architecture:          amd64
+18-Dec-2019 20:40:41.564 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Java Home:             C:\Program Files\Java\jdk1.8.0_231\jre
+18-Dec-2019 20:40:41.564 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke JVM Version:           1.8.0_231-b11
+18-Dec-2019 20:40:41.564 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke JVM Vendor:            Oracle Corporation
+18-Dec-2019 20:40:41.564 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke CATALINA_BASE:         C:\Users\HacKing\Projects\webapi\target\apache-tomee
+18-Dec-2019 20:40:41.564 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke CATALINA_HOME:         C:\Users\HacKing\Projects\webapi\target\apache-tomee
+18-Dec-2019 20:40:41.565 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -XX:+HeapDumpOnOutOfMemoryError
+18-Dec-2019 20:40:41.565 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Dorg.apache.catalina.STRICT_SERVLET_COMPLIANCE=false
+18-Dec-2019 20:40:41.566 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Dopenejb.session.manager=org.apache.tomee.catalina.session.QuickSessionManager
+18-Dec-2019 20:40:41.566 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Dtomee.remote.support=true
+18-Dec-2019 20:40:41.566 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Dopenejb.system.apps=false
+18-Dec-2019 20:40:41.566 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dtomee.jsp-development=true
+18-Dec-2019 20:40:41.566 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.config.file=C:\Users\HacKing\Projects\webapi\target\apache-tomee\conf\logging.properties
+18-Dec-2019 20:40:41.566 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -javaagent:C:\Users\HacKing\Projects\webapi\target\apache-tomee\lib\openejb-javaagent.jar
+18-Dec-2019 20:40:41.567 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+18-Dec-2019 20:40:41.567 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.io.tmpdir=C:\Users\HacKing\Projects\webapi\target\apache-tomee\temp
+18-Dec-2019 20:40:41.567 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.base=C:\Users\HacKing\Projects\webapi\target\apache-tomee
+18-Dec-2019 20:40:41.567 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.home=C:\Users\HacKing\Projects\webapi\target\apache-tomee
+18-Dec-2019 20:40:41.567 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.ext.dirs=C:\Users\HacKing\Projects\webapi\target\apache-tomee\lib
+18-Dec-2019 20:40:41.567 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dorg.apache.tomcat.util.http.ServerCookie.ALLOW_HTTP_SEPARATORS_IN_V0=true
+18-Dec-2019 20:40:41.567 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -ea
+18-Dec-2019 20:40:41.567 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_231\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Program Files\Java\jre1.8.0_231;C:\Program Files\Git\cmd;C:\Program Files\jEdit;C:\apache-maven-3.6.3\bin;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\HacKing\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\HacKing\AppData\Roaming\npm;.]
+18-Dec-2019 20:40:42.026 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["http-nio-8080"]
+18-Dec-2019 20:40:42.346 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Using a shared selector for servlet write/read
+18-Dec-2019 20:40:42.362 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["ajp-nio-8009"]
+18-Dec-2019 20:40:42.373 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Using a shared selector for servlet write/read
+18-Dec-2019 20:40:42.890 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'tomee.remote.support=true'
+18-Dec-2019 20:40:42.906 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
+18-Dec-2019 20:40:43.073 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+18-Dec-2019 20:40:43.073 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> OpenEJB http://tomee.apache.org/
+18-Dec-2019 20:40:43.073 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Startup: Wed Dec 18 20:40:43 CET 2019
+18-Dec-2019 20:40:43.074 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Copyright 1999-2018 (C) Apache OpenEJB Project, All Rights Reserved.
+18-Dec-2019 20:40:43.074 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Version: 7.0.5
+18-Dec-2019 20:40:43.074 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build date: 20180710
+18-Dec-2019 20:40:43.074 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build time: 12:28
+18-Dec-2019 20:40:43.074 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+18-Dec-2019 20:40:43.076 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.home = C:\Users\HacKing\Projects\webapi\target\apache-tomee
+18-Dec-2019 20:40:43.076 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.base = C:\Users\HacKing\Projects\webapi\target\apache-tomee
+18-Dec-2019 20:40:43.100 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@769e7ee8
+18-Dec-2019 20:40:43.100 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Succeeded in installing singleton service
+18-Dec-2019 20:40:43.162 INFO [main] org.apache.openejb.config.ConfigurationFactory.init TomEE configuration file is 'C:\Users\HacKing\Projects\webapi\target\apache-tomee\conf\tomee.xml'
+18-Dec-2019 20:40:43.240 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
+18-Dec-2019 20:40:43.246 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
+18-Dec-2019 20:40:43.251 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.system.apps=false'
+18-Dec-2019 20:40:43.251 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.deployments.classpath=false'
+18-Dec-2019 20:40:43.273 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating TransactionManager(id=Default Transaction Manager)
+18-Dec-2019 20:40:43.373 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating SecurityService(id=Tomcat Security Service)
+18-Dec-2019 20:40:43.544 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf)
+18-Dec-2019 20:40:43.805 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf-rs)
+18-Dec-2019 20:40:43.933 INFO [main] org.apache.openejb.server.SimpleServiceManager.start   ** Bound Services **
+18-Dec-2019 20:40:43.933 INFO [main] org.apache.openejb.server.SimpleServiceManager.printRow   NAME                 IP              PORT  
+18-Dec-2019 20:40:43.934 INFO [main] org.apache.openejb.server.SimpleServiceManager.start -------
+18-Dec-2019 20:40:43.934 INFO [main] org.apache.openejb.server.SimpleServiceManager.start Ready!
+18-Dec-2019 20:40:43.935 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initialization processed in 3013 ms
+18-Dec-2019 20:40:43.984 INFO [main] org.apache.tomee.catalina.OpenEJBNamingContextListener.bindResource Importing a Tomcat Resource with id 'UserDatabase' of type 'org.apache.catalina.UserDatabase'.
+18-Dec-2019 20:40:43.985 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=UserDatabase)
+18-Dec-2019 20:40:43.995 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting service [Catalina]
+18-Dec-2019 20:40:43.995 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting Servlet Engine: Apache Tomcat (TomEE)/8.5.32 (7.0.5)
+18-Dec-2019 20:40:44.035 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application archive [C:\Users\HacKing\Projects\webapi\target\apache-tomee\webapps\restapi.war]
+18-Dec-2019 20:40:44.050 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /restapi
+18-Dec-2019 20:40:44.056 INFO [localhost-startStop-1] org.apache.openejb.util.JarExtractor.extract Extracting jar: C:\Users\HacKing\Projects\webapi\target\apache-tomee\webapps\restapi.war
+18-Dec-2019 20:40:46.025 INFO [localhost-startStop-1] org.apache.openejb.util.JarExtractor.extract Extracted path: C:\Users\HacKing\Projects\webapi\target\apache-tomee\webapps\restapi
+18-Dec-2019 20:40:46.026 INFO [localhost-startStop-1] org.apache.openejb.util.OptionsLog.info Using 'openejb.session.manager=org.apache.tomee.catalina.session.QuickSessionManager'
+18-Dec-2019 20:40:48.280 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: C:\Users\HacKing\Projects\webapi\target\apache-tomee\webapps\restapi
+18-Dec-2019 20:40:49.655 INFO [localhost-startStop-1] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb FormularDAO: EjbDeployment(deployment-id=FormularDAO)
+18-Dec-2019 20:40:49.655 INFO [localhost-startStop-1] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb RadioButtonFieldDAO: EjbDeployment(deployment-id=RadioButtonFieldDAO)
+18-Dec-2019 20:40:49.656 INFO [localhost-startStop-1] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb FormularFieldDAO: EjbDeployment(deployment-id=FormularFieldDAO)
+18-Dec-2019 20:40:49.664 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=restapi/HSQLDB Database, type=Resource, provider-id=Default JDBC Database)
+18-Dec-2019 20:40:49.665 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=restapi/HSQLDB Database)
+18-Dec-2019 20:40:50.602 INFO [localhost-startStop-1] org.hsqldb.persist.Logger.logInfoEvent Checkpoint start
+18-Dec-2019 20:40:50.605 INFO [localhost-startStop-1] org.hsqldb.persist.Logger.logInfoEvent checkpointClose start
+18-Dec-2019 20:40:51.326 INFO [localhost-startStop-1] org.hsqldb.persist.Logger.logInfoEvent checkpointClose end
+18-Dec-2019 20:40:51.342 INFO [localhost-startStop-1] org.hsqldb.persist.Logger.logInfoEvent Checkpoint end - txts: 1
+18-Dec-2019 20:40:51.517 WARNING [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.unusedProperty unused property 'jtManaged' for resource 'restapi/HSQLDB Database'
+18-Dec-2019 20:40:51.526 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Stateless Container, type=Container, provider-id=Default Stateless Container)
+18-Dec-2019 20:40:51.526 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.createContainer Auto-creating a container for bean FormularDAO: Container(type=STATELESS, id=Default Stateless Container)
+18-Dec-2019 20:40:51.527 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Container(id=Default Stateless Container)
+18-Dec-2019 20:40:51.558 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.processResourceRef Auto-linking resource-ref 'openejb/Resource/restapi/HSQLDB Database' in bean FormularDAO to Resource(id=restapi/HSQLDB Database)
+18-Dec-2019 20:40:51.562 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.processResourceRef Auto-linking resource-ref 'openejb/Resource/HSQLDB Database' in bean FormularDAO to Resource(id=restapi/HSQLDB Database)
+18-Dec-2019 20:40:51.563 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.processResourceRef Auto-linking resource-ref 'openejb/Resource/restapi/HSQLDB Database' in bean RadioButtonFieldDAO to Resource(id=restapi/HSQLDB Database)
+18-Dec-2019 20:40:51.564 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.processResourceRef Auto-linking resource-ref 'openejb/Resource/HSQLDB Database' in bean RadioButtonFieldDAO to Resource(id=restapi/HSQLDB Database)
+18-Dec-2019 20:40:51.567 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.processResourceRef Auto-linking resource-ref 'openejb/Resource/restapi/HSQLDB Database' in bean FormularFieldDAO to Resource(id=restapi/HSQLDB Database)
+18-Dec-2019 20:40:51.568 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.processResourceRef Auto-linking resource-ref 'openejb/Resource/HSQLDB Database' in bean FormularFieldDAO to Resource(id=restapi/HSQLDB Database)
+18-Dec-2019 20:40:51.574 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Managed Container, type=Container, provider-id=Default Managed Container)
+18-Dec-2019 20:40:51.577 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.createContainer Auto-creating a container for bean restapi.Comp1115155724: Container(type=MANAGED, id=Default Managed Container)
+18-Dec-2019 20:40:51.577 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Container(id=Default Managed Container)
+18-Dec-2019 20:40:51.608 INFO [localhost-startStop-1] org.apache.openejb.core.managed.SimplePassivater.init Using directory C:\Users\HacKing\Projects\webapi\target\apache-tomee\temp for stateful session passivation
+18-Dec-2019 20:40:51.623 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.processResourceRef Auto-linking resource-ref 'openejb/Resource/restapi/HSQLDB Database' in bean restapi.Comp1115155724 to Resource(id=restapi/HSQLDB Database)
+18-Dec-2019 20:40:51.624 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.processResourceRef Auto-linking resource-ref 'openejb/Resource/HSQLDB Database' in bean restapi.Comp1115155724 to Resource(id=restapi/HSQLDB Database)
+18-Dec-2019 20:40:51.624 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.deploy Configuring PersistenceUnit(name=restapi_PU, provider=org.eclipse.persistence.jpa.PersistenceProvider)
+18-Dec-2019 20:40:51.628 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.logAutoCreateResource Auto-creating a Resource with id 'restapi/HSQLDB DatabaseNonJta' of type 'DataSource for 'restapi_PU'.
+18-Dec-2019 20:40:51.630 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.deploy Configuring Service(id=restapi/HSQLDB DatabaseNonJta, type=Resource, provider-id=restapi/HSQLDB Database)
+18-Dec-2019 20:40:51.630 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=restapi/HSQLDB DatabaseNonJta)
+18-Dec-2019 20:40:51.648 WARNING [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.unusedProperty unused property 'jtManaged' for resource 'restapi/HSQLDB DatabaseNonJta'
+18-Dec-2019 20:40:51.648 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.setJtaDataSource Adjusting PersistenceUnit restapi_PU <jta-data-source> to Resource ID 'restapi/HSQLDB Database' from 'jdbc/my_h2_db'
+18-Dec-2019 20:40:51.649 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.setNonJtaDataSource Adjusting PersistenceUnit restapi_PU <non-jta-data-source> to Resource ID 'restapi/HSQLDB DatabaseNonJta' from 'null'
+18-Dec-2019 20:40:51.722 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "C:\Users\HacKing\Projects\webapi\target\apache-tomee\webapps\restapi" loaded.
+18-Dec-2019 20:40:51.729 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: C:\Users\HacKing\Projects\webapi\target\apache-tomee\webapps\restapi
+18-Dec-2019 20:40:54.596 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.ReloadableEntityManagerFactory.createDelegate PersistenceUnit(name=restapi_PU, provider=org.eclipse.persistence.jpa.PersistenceProvider) - provider time 2839ms
+18-Dec-2019 20:40:54.744 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=FormularDAOLocalBean) --> Ejb(deployment-id=FormularDAO)
+18-Dec-2019 20:40:54.744 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/restapi/FormularDAO!com.webapi.restapi.dao.FormularDAO) --> Ejb(deployment-id=FormularDAO)
+18-Dec-2019 20:40:54.746 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/restapi/FormularDAO) --> Ejb(deployment-id=FormularDAO)
+18-Dec-2019 20:40:54.749 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=RadioButtonFieldDAOLocalBean) --> Ejb(deployment-id=RadioButtonFieldDAO)
+18-Dec-2019 20:40:54.749 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/restapi/RadioButtonFieldDAO!com.webapi.restapi.dao.RadioButtonFieldDAO) --> Ejb(deployment-id=RadioButtonFieldDAO)
+18-Dec-2019 20:40:54.750 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/restapi/RadioButtonFieldDAO) --> Ejb(deployment-id=RadioButtonFieldDAO)
+18-Dec-2019 20:40:54.754 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=FormularFieldDAOLocalBean) --> Ejb(deployment-id=FormularFieldDAO)
+18-Dec-2019 20:40:54.754 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/restapi/FormularFieldDAO!com.webapi.restapi.dao.FormularFieldDAO) --> Ejb(deployment-id=FormularFieldDAO)
+18-Dec-2019 20:40:54.754 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/restapi/FormularFieldDAO) --> Ejb(deployment-id=FormularFieldDAO)
+18-Dec-2019 20:40:54.816 INFO [localhost-startStop-1] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@769e7ee8
+18-Dec-2019 20:40:55.033 INFO [localhost-startStop-1] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+18-Dec-2019 20:40:55.048 INFO [localhost-startStop-1] org.apache.webbeans.plugins.PluginLoader.startUp Adding OpenWebBeansPlugin : [CdiPlugin]
+18-Dec-2019 20:40:55.056 INFO [localhost-startStop-1] org.apache.openejb.cdi.CdiScanner.handleBda Using annotated mode for file:/C:/Users/HacKing/Projects/webapi/target/apache-tomee/webapps/restapi/WEB-INF/classes/ looking all classes to find CDI beans, maybe think to add a beans.xml if not there or add the jar to exclusions.list
+18-Dec-2019 20:40:55.844 INFO [localhost-startStop-1] org.apache.webbeans.config.BeansDeployer.validateInjectionPoints All injection points were validated successfully.
+18-Dec-2019 20:40:55.858 INFO [localhost-startStop-1] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 825 ms.
+18-Dec-2019 20:40:55.879 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=RadioButtonFieldDAO, ejb-name=RadioButtonFieldDAO, container=Default Stateless Container)
+18-Dec-2019 20:40:55.881 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=FormularFieldDAO, ejb-name=FormularFieldDAO, container=Default Stateless Container)
+18-Dec-2019 20:40:55.894 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=FormularDAO, ejb-name=FormularDAO, container=Default Stateless Container)
+18-Dec-2019 20:40:55.957 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=RadioButtonFieldDAO, ejb-name=RadioButtonFieldDAO, container=Default Stateless Container)
+18-Dec-2019 20:40:55.972 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=FormularFieldDAO, ejb-name=FormularFieldDAO, container=Default Stateless Container)
+18-Dec-2019 20:40:55.979 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=FormularDAO, ejb-name=FormularDAO, container=Default Stateless Container)
+18-Dec-2019 20:40:56.012 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=C:\Users\HacKing\Projects\webapi\target\apache-tomee\webapps\restapi)
+18-Dec-2019 20:40:56.521 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Dec-2019 20:40:56.919 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using readers:
+18-Dec-2019 20:40:56.920 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.PrimitiveTextProvider@17ebd7e3
+18-Dec-2019 20:40:56.920 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.FormEncodingProvider@3db3851c
+18-Dec-2019 20:40:56.920 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.MultipartProvider@7efd4557
+18-Dec-2019 20:40:56.920 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.SourceProvider@37089d42
+18-Dec-2019 20:40:56.920 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementTypedProvider@77cb99e9
+18-Dec-2019 20:40:56.921 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementProvider@56f17969
+18-Dec-2019 20:40:56.921 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJohnzonProvider@56ec4325
+18-Dec-2019 20:40:56.921 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonpProvider@112da31d
+18-Dec-2019 20:40:56.921 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.StringTextProvider@4fa49a38
+18-Dec-2019 20:40:56.921 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.BinaryDataProvider@63918e0
+18-Dec-2019 20:40:56.921 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.DataSourceProvider@32f88669
+18-Dec-2019 20:40:56.923 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using writers:
+18-Dec-2019 20:40:56.923 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.johnzon.jaxrs.WadlDocumentMessageBodyWriter@4e31fe60
+18-Dec-2019 20:40:56.923 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.StringTextProvider@4fa49a38
+18-Dec-2019 20:40:56.924 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementTypedProvider@77cb99e9
+18-Dec-2019 20:40:56.924 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.PrimitiveTextProvider@17ebd7e3
+18-Dec-2019 20:40:56.924 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.FormEncodingProvider@3db3851c
+18-Dec-2019 20:40:56.924 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.MultipartProvider@7efd4557
+18-Dec-2019 20:40:56.924 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.SourceProvider@37089d42
+18-Dec-2019 20:40:56.924 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementProvider@56f17969
+18-Dec-2019 20:40:56.925 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJohnzonProvider@56ec4325
+18-Dec-2019 20:40:56.925 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonpProvider@112da31d
+18-Dec-2019 20:40:56.925 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.BinaryDataProvider@63918e0
+18-Dec-2019 20:40:56.925 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.DataSourceProvider@32f88669
+18-Dec-2019 20:40:56.925 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using exception mappers:
+18-Dec-2019 20:40:56.925 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.impl.WebApplicationExceptionMapper@1d713e8a
+18-Dec-2019 20:40:56.925 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.EJBExceptionMapper@7d469a9b
+18-Dec-2019 20:40:56.925 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.validation.ValidationExceptionMapper@579086ac
+18-Dec-2019 20:40:56.929 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints REST Application: http://localhost:8080/restapi/api                             -> com.webapi.restapi.resources.ApplicationConfig@5f45ce3f
+18-Dec-2019 20:40:56.962 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints      Service URI: http://localhost:8080/restapi/api/formulars                   -> Pojo com.webapi.restapi.resources.FormularResource
+18-Dec-2019 20:40:56.963 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints               GET http://localhost:8080/restapi/api/formulars/                  ->      Response getAll()                 
+18-Dec-2019 20:40:56.963 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints               GET http://localhost:8080/restapi/api/formulars/findByName/{name} ->      Response getFormularByName(String)
+18-Dec-2019 20:40:56.963 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints               GET http://localhost:8080/restapi/api/formulars/{id}              ->      Response getFormular(Long)        
+18-Dec-2019 20:40:56.963 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints              POST http://localhost:8080/restapi/api/formulars/                  ->      Response create(Formular)         
+18-Dec-2019 20:40:56.963 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints               PUT http://localhost:8080/restapi/api/formulars/{id}              ->      Response update(Long, Formular)   
+18-Dec-2019 20:40:57.012 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application archive [C:\Users\HacKing\Projects\webapi\target\apache-tomee\webapps\restapi.war] has finished in [12,976] ms
+18-Dec-2019 20:40:57.049 INFO [Catalina-startStop-1] org.apache.catalina.core.StandardContext.setClassLoaderProperty Unable to set the web application class loader property [clearReferencesRmiTargets] to [true] as the property does not exist.
+18-Dec-2019 20:40:57.049 INFO [Catalina-startStop-1] org.apache.catalina.core.StandardContext.setClassLoaderProperty Unable to set the web application class loader property [clearReferencesObjectStreamClassCaches] to [true] as the property does not exist.
+18-Dec-2019 20:40:57.076 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["http-nio-8080"]
+18-Dec-2019 20:40:57.097 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["ajp-nio-8009"]
+18-Dec-2019 20:40:57.107 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Server startup in 13170 ms
+18-Dec-2019 21:44:40.739 WARNING [http-nio-8080-exec-7] org.apache.cxf.jaxrs.utils.InjectionUtils.handleParameter Class java.lang.Long can not be instantiated using a constructor with a single String argument

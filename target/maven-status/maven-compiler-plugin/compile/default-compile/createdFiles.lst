@@ -1,4 +1,3 @@
-com\webapi\restapi\resources\RadioButtonFieldResource.class
 com\webapi\restapi\resources\ApplicationConfig.class
 com\webapi\restapi\dao\FormularDAO.class
 com\webapi\restapi\models\Formular.class
@@ -7,3 +6,4 @@ com\webapi\restapi\resources\FormularResource.class
 com\webapi\restapi\models\FormularField.class
 com\webapi\restapi\models\RadioButtonField.class
 com\webapi\restapi\dao\FormularFieldDAO.class
+com\webapi\restapi\filters\CORSFilter.class

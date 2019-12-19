@@ -31,7 +31,7 @@ public class FormularField implements Serializable {
     private String validator;
     private Long quantity;
     
-    @OneToMany( targetEntity=RadioButtonField.class, cascade = CascadeType.PERSIST )
+    @OneToMany( targetEntity=RadioButtonField.class, cascade = CascadeType.ALL )
     @JoinColumn(name = "formularField_id")
     private List<RadioButtonField> radioButtonFields;
 
@@ -79,7 +79,7 @@ public class FormularField implements Serializable {
     	return radioButtonFields;
     }
     
-    public void setFields(List<RadioButtonField> radioButtonFields) {
+    public void setRadioButtonFields(List<RadioButtonField> radioButtonFields) {
     	this.radioButtonFields = radioButtonFields;
     }
 
