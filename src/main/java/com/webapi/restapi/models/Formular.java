@@ -30,9 +30,12 @@ public class Formular implements Serializable {
     private Long id;
     private String name;
     
-    @OneToMany( targetEntity=FormularField.class, cascade = CascadeType.ALL )
+    @OneToMany( targetEntity=FormularField.class, cascade = CascadeType.ALL, mappedBy = "formular" )
     @JoinColumn(name = "formular_id")
     private List<FormularField> fields;
+    
+    @OneToMany( targetEntity=FormularVersion.class, cascade = CascadeType.ALL, mappedBy = "formular" )
+    private List<FormularVersion> versions;
 	
     public Long getId() {
         return id;
