@@ -20,8 +20,8 @@ import com.webapi.restapi.models.FormularFieldVersion;
 @Table(name = "formularVersions")
 @NamedQueries({
 	@NamedQuery(name = "FormularVersion.findAll", query = "SELECT f FROM FormularVersion f"),
-    @NamedQuery(name = "FormularVersion.searchByName", query = "SELECT f FROM FormularVersion f WHERE LOWER(f.name) = LOWER(:name)"),
-    @NamedQuery(name = "FormularVersion.searchByNameAndVersion", query = "SELECT f FROM FormularVersion f WHERE LOWER(f.name) = LOWER(:name) AND LOWER(f.version) = LOWER(:version)")
+    @NamedQuery(name = "FormularVersion.searchByName", query = "SELECT f FROM FormularVersion f WHERE LOWER(f.version) = LOWER(:version)"),
+    @NamedQuery(name = "FormularVersion.searchFormularVersion", query = "SELECT fv FROM FormularVersion fv LEFT JOIN FETCH fv.formular WHERE LOWER(fv.version) = LOWER(:version) AND fv.formular.id = :id")
 })
 public class FormularVersion implements Serializable {
 	
@@ -51,7 +51,7 @@ public class FormularVersion implements Serializable {
     	return version;
     }
     
-    public void SetVersion(String version) {
+    public void setVersion(String version) {
     	this.version = version;
     }
     

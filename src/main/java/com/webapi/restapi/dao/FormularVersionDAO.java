@@ -20,9 +20,15 @@ public class FormularVersionDAO {
         return em.find(FormularVersion.class, id);
     }
 
-    public FormularVersion findByName(String name) {
+    public FormularVersion findByName(String version) {
         return em.createNamedQuery("FormularVersion.searchByName", FormularVersion.class)
-        .setParameter("name", name).getResultList()
+        .setParameter("version", version).getResultList()
+        .stream().findFirst().orElse(null);
+    }
+
+    public FormularVersion findVersion(Long id, String version) {
+        return em.createNamedQuery("FormularVersion.searchFormularVersion", FormularVersion.class)
+        .setParameter("id", id).setParameter("version", version).getResultList()
         .stream().findFirst().orElse(null);
     }
 

@@ -1,6 +1,7 @@
 package com.webapi.restapi.resources;
 
 import com.webapi.restapi.dao.FormularVersionDAO;
+import com.webapi.restapi.dao.FormularDAO;
 import com.webapi.restapi.dao.FormularFieldVersionDAO;
 import com.webapi.restapi.dao.RadioButtonFieldVersionDAO;
 import com.webapi.restapi.models.FormularVersion;
@@ -15,6 +16,8 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+
+import com.webapi.restapi.models.Formular;
 import com.webapi.restapi.models.FormularFieldVersion;
 import com.webapi.restapi.models.RadioButtonFieldVersion;
 
@@ -26,6 +29,9 @@ public class FormularVersionResource {
 
     @Inject
     FormularVersionDAO formularVersionDAO;
+
+    @Inject
+    FormularDAO formularDAO;
 
     @Inject
     FormularFieldVersionDAO formularFieldVersionDAO;
@@ -40,17 +46,21 @@ public class FormularVersionResource {
 
     @GET
     @Path("{id}")
-    public Response getFormular(@PathParam("id") Long id) {
+    public Response getFormularVersion(@PathParam("id") Long id) {
         FormularVersion formularVersion = formularVersionDAO.findById(id);
 
         return Response.ok(formularVersion).build();
     }
 
     @GET
-    @Path("/findByName/{name}")
-    public Response getFormularByName(@PathParam("name") String name) {
-        FormularVersion formularVersion = formularVersionDAO.findByName(name);
-        return Response.ok(formularVersion).build();
+    @Path("/findVersion/{id}/{version}")
+    public Response findFormularVersion(@PathParam("id") Long id, @PathParam("version") String version) {
+        FormularVersion formularVersion = formularVersionDAO.findVersion(id, version);
+        if(formularVersion != null) {
+            return Response.ok(formularVersion).build();
+        }
+        Formular formular = formularDAO.findById(id);
+        return Response.ok(formular).build();
     }
 
     @PUT
@@ -79,7 +89,7 @@ public class FormularVersionResource {
 		  	  formularFieldVersionDAO.create(field);
 		  }
 		}
-        updateFormularVersion.setName(formularVersion.getName());
+        updateFormularVersion.setVersion(formularVersion.getVersion());
         updateFormularVersion.setFields(formularVersion.getFields());
         formularVersionDAO.update(updateFormularVersion);
 
@@ -88,7 +98,7 @@ public class FormularVersionResource {
 
     @POST
     public Response create(FormularVersion formularVersion) {
-    	FormularVersion existingFormularVersion = formularVersionDAO.findByName(formularVersion.getName());
+    	FormularVersion existingFormularVersion = formularVersionDAO.findByName(formularVersion.getVersion());
         if(existingFormularVersion == null)
         {
         	formularVersionDAO.create(formularVersion);

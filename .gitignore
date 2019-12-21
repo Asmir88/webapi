@@ -5,7 +5,9 @@ target/
 libs/
 tmp/
 node_modules/
- 
+.git/
+.settings/
+
 # OS Files #
 .DS_Store
  

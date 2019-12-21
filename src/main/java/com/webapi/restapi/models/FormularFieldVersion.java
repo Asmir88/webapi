@@ -31,6 +31,7 @@ public class FormularFieldVersion implements Serializable {
     private String type;
     private String validator;
     private Long quantity;
+    private String value;
     
     @ManyToOne
     @JoinColumn(name = "formularVersion_id")
@@ -77,6 +78,14 @@ public class FormularFieldVersion implements Serializable {
 	
     public void setValidator(String validator) {
         this.validator = validator;
+    }
+	
+    public String getValue() {
+        return value;
+    }
+	
+    public void setValue(String value) {
+        this.value = value;
     }
     
     public FormularVersion getFormularVersion() {
