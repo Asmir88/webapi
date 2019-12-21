@@ -91,6 +91,7 @@ public class FormularVersionResource {
 		}
         updateFormularVersion.setVersion(formularVersion.getVersion());
         updateFormularVersion.setFields(formularVersion.getFields());
+        updateFormularVersion.setFormular(formularVersion.getFormular());
         formularVersionDAO.update(updateFormularVersion);
 
         return Response.ok(updateFormularVersion).build();
