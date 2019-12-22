@@ -32,7 +32,7 @@ public class FormularVersion implements Serializable {
     private Long id;
     private String version;
     
-    @OneToMany( targetEntity=FormularFieldVersion.class, cascade = CascadeType.ALL, mappedBy = "formularVersion" )
+    @OneToMany(targetEntity=FormularFieldVersion.class, cascade = CascadeType.ALL, mappedBy = "formularVersion" )
     private List<FormularFieldVersion> fields;
     
     @ManyToOne

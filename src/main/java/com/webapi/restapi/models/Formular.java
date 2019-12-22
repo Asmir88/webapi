@@ -33,9 +33,6 @@ public class Formular implements Serializable {
     @OneToMany( targetEntity=FormularField.class, cascade = CascadeType.ALL, mappedBy = "formular" )
     @JoinColumn(name = "formular_id")
     private List<FormularField> fields;
-    
-    @OneToMany( targetEntity=FormularVersion.class, cascade = CascadeType.ALL, mappedBy = "formular" )
-    private List<FormularVersion> versions;
 	
     public Long getId() {
         return id;
@@ -60,10 +57,4 @@ public class Formular implements Serializable {
     public void setFields(List<FormularField> fields) {
     	this.fields = fields;
     }
-	
-    @Override
-    public String toString() {
-		return "Formular{" + "id=" + id + ", name=" + name + '}';
-    }
-	
 }
