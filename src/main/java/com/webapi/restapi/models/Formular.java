@@ -15,6 +15,9 @@ import javax.persistence.OneToMany;
 import java.util.List;
 import com.webapi.restapi.models.FormularField;
 
+/**
+ * This entity represents the formular template which is used for creating versions of formulars
+ */
 @Entity
 @Table(name = "formulars")
 @NamedQueries({

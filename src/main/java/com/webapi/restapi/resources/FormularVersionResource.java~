@@ -99,7 +99,7 @@ public class FormularVersionResource {
 
     @POST
     public Response create(FormularVersion formularVersion) {
-    	FormularVersion existingFormularVersion = formularVersionDAO.findVersion(formularVersion.getId(), formularVersion.getVersion());
+    	FormularVersion existingFormularVersion = formularVersionDAO.findByName(formularVersion.getVersion());
         if(existingFormularVersion == null)
         {
         	formularVersionDAO.create(formularVersion);

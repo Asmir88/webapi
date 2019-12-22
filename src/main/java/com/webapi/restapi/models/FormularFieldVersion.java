@@ -15,6 +15,13 @@ import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+/**
+ * This entity represents the value of a field in a version of a formular
+ * It's structure is almost the same as that of the formular field in the formular entity
+ * Basically it almost an identical copy of the FormField (related to the Formular) it was generated from
+ * It will not change it's type if the FormularField type: textbox, checkbox, radiobutton (it was generated from) changes
+ * It does not have a reference to the FormField entity, because it only depends on the current version of the formular
+ */
 @Entity
 @Table(name = "formularFieldVersions")
 @NamedQueries({

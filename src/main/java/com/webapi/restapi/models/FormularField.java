@@ -15,6 +15,10 @@ import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+/**
+ * This entity represents the form fields template which are used for creating 
+ * fields in form for creating new versions of formulars
+ */
 @Entity
 @Table(name = "formularFields")
 @NamedQueries({

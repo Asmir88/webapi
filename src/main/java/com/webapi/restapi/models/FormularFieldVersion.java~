@@ -16,11 +16,11 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "formularFields")
+@Table(name = "formularFieldVersions")
 @NamedQueries({
-    @NamedQuery(name = "FormularField.findAll", query = "SELECT t FROM FormularField t")
+    @NamedQuery(name = "FormularFieldVersion.findAll", query = "SELECT t FROM FormularFieldVersion t")
 })
-public class FormularField implements Serializable {
+public class FormularFieldVersion implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -31,14 +31,14 @@ public class FormularField implements Serializable {
     private String type;
     private String validator;
     private Long quantity;
+    private String value;
     
     @ManyToOne
-    @JoinColumn(name = "formular_id")
-    private Formular formular;
+    @JoinColumn(name = "formularVersion_id")
+    private FormularVersion formularVersion;
     
-    @OneToMany( targetEntity=RadioButtonField.class, cascade = CascadeType.ALL )
-    @JoinColumn(name = "formularField_id")
-    private List<RadioButtonField> radioButtonFields;
+    @OneToMany( targetEntity=RadioButtonFieldVersion.class, cascade = CascadeType.ALL, mappedBy = "formularFieldVersion")
+    private List<RadioButtonFieldVersion> radioButtonFields;
 
     public Long getId() {
         return id;
@@ -79,25 +79,28 @@ public class FormularField implements Serializable {
     public void setValidator(String validator) {
         this.validator = validator;
     }
-    
-    public Formular getFormular() {
-    	return formular;
+	
+    public String getValue() {
+        return value;
+    }
+	
+    public void setValue(String value) {
+        this.value = value;
     }
     
-    public void setFormular(Formular formular) {
-    	this.formular = formular;
+    public FormularVersion getFormularVersion() {
+    	return formularVersion;
     }
     
-    public List<RadioButtonField> getRadioButtonFields() {
+    public void setFormularVersion(FormularVersion formularVersion) {
+    	this.formularVersion = formularVersion;
+    }
+    
+    public List<RadioButtonFieldVersion> getRadioButtonFields() {
     	return radioButtonFields;
     }
     
-    public void setRadioButtonFields(List<RadioButtonField> radioButtonFields) {
+    public void setRadioButtonFields(List<RadioButtonFieldVersion> radioButtonFields) {
     	this.radioButtonFields = radioButtonFields;
-    }
-
-    @Override
-    public String toString() {
-        return "Type{" + "id=" + id + ", name=" + name + '}';
     }
 }

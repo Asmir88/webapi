@@ -11,15 +11,12 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
-/**
- * This entity represents the labels for a radio button field
- */
 @Entity
-@Table(name = "radioButtonFields")
+@Table(name = "radioButtonFieldVersions")
 @NamedQueries({
-    @NamedQuery(name = "RadioButtonField.findAll", query = "SELECT t FROM RadioButtonField t")
+    @NamedQuery(name = "RadioButtonFieldVersion.findAll", query = "SELECT t FROM RadioButtonFieldVersion t")
 })
-public class RadioButtonField implements Serializable {
+public class RadioButtonFieldVersion implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -29,8 +26,8 @@ public class RadioButtonField implements Serializable {
     private String name;
     
     @ManyToOne
-    @JoinColumn(name = "formularField_id")
-    private FormularField formularField;
+	@JoinColumn(name="formularFieldVersion_id")
+	private FormularFieldVersion formularFieldVersion;
 
     public Long getId() {
         return id;
@@ -48,11 +45,11 @@ public class RadioButtonField implements Serializable {
         this.name = name;
     }
     
-    public FormularField getFormularField() {
-    	return formularField;
+    public FormularFieldVersion getFormularFieldVersion() {
+    	return formularFieldVersion;
     }
     
-    public void setFormularField(FormularField formularField) {
-    	this.formularField = formularField;
+    public void setFormularFieldVersion(FormularFieldVersion formularFieldVersion) {
+    	this.formularFieldVersion = formularFieldVersion;
     }
 }

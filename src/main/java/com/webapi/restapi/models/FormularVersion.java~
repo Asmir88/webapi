@@ -16,10 +16,6 @@ import javax.persistence.OneToMany;
 import java.util.List;
 import com.webapi.restapi.models.FormularFieldVersion;
 
-/**
- * This entity represents the version for a formular
- * It's structure is almost the same as that of the formular entity
- */
 @Entity
 @Table(name = "formularVersions")
 @NamedQueries({

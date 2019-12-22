@@ -11,6 +11,9 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
+/**
+ * This entity represents the labels for a radio button field in a version of a formular
+ */
 @Entity
 @Table(name = "radioButtonFieldVersions")
 @NamedQueries({
